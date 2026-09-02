@@ -1,0 +1,47 @@
+site_name: SO Explorer
+site_description: Wiki interactiva de Sistemas Operativos 1
+
+theme:
+  name: material
+  language: es
+
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+
+    - scheme: slate
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Inicio: index.md
+
+  - Unidad 1:
+      - Introducción: unidad1/introduccion.md
+      - Definición y rol del SO: unidad1/definicion-rol.md
+      - Evolución histórica: unidad1/evolucion.md
+      - System Calls y protección: unidad1/system-calls.md
+      - Clasificación de los SO: unidad1/clasificacion.md
+
+  - Unidad 2: unidad2/index.md
+  - Unidad 3: unidad3/index.md
+  - Unidad 4: unidad4/index.md
+  - Unidad 5: unidad5/index.md
+  - Glosario: glosario.md
+
+extra_css:
+  - stiloss/extra.css
