@@ -41,7 +41,10 @@ nav:
   - Unidad 3: unidad3/index.md
   - Unidad 4: unidad4/index.md
   - Unidad 5: unidad5/index.md
+  - simulador: simulador/index.md
   - Glosario: glosario.md
 
 extra_css:
   - stiloss/extra.css
+extra_javascript:
+  - scripts/simulador.js
