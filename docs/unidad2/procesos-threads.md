@@ -1,4 +1,4 @@
-#  Unidad 2 — Definición y Control de Procesos
+# Unidad 2 — Definición y Control de Procesos
 
 Los **procesos** son uno de los conceptos fundamentales de los sistemas operativos. Cada vez que ejecutamos una aplicación, abrimos un navegador, reproducimos música o utilizamos un editor de código, el sistema operativo debe administrar los procesos necesarios para realizar estas tareas.
 
@@ -6,7 +6,7 @@ En esta unidad estudiaremos cómo un sistema operativo **crea, controla, planifi
 
 ---
 
-##  Objetivos de la unidad
+## Objetivos de la unidad
 
 Al finalizar esta unidad podrás:
 
@@ -60,8 +60,8 @@ Conoceremos el algoritmo **Round Robin** y analizaremos cómo el tamaño del **Q
 
 ---
 
-##  Aprender experimentando
+## Aprender experimentando
 
 Además de los conceptos teóricos, **SO Explorer** incluye un simulador interactivo que permite observar la creación y ejecución de procesos, el consumo y liberación de memoria RAM y el funcionamiento de una cola de espera.
 
-[ Abrir simulador de procesos →](../simulador/)
+[Abrir simulador de procesos →](../simulador/index.md)

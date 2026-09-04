@@ -37,7 +37,14 @@ nav:
       - System Calls y protección: unidad1/system-calls.md
       - Clasificación de los SO: unidad1/clasificacion.md
 
-  - Unidad 2: unidad2/index.md
+  - Unidad 2:
+      - Introducción: unidad2/index.md
+      - Proceso vs. Programa: unidad2/proceso-programa.md
+      - Estados de un Proceso: unidad2/estados-proceso.md
+      - Bloque de Control de Proceso (PCB): unidad2/pcb.md
+      - Transiciones y Control: unidad2/transiciones-control.md
+      - Procesos y Threads: unidad2/procesos-threads.md
+      - Planificación de CPU: unidad2/planificacion-cpu.md
   - Unidad 3: unidad3/index.md
   - Unidad 4: unidad4/index.md
   - Unidad 5: unidad5/index.md
@@ -48,3 +55,10 @@ extra_css:
   - stiloss/extra.css
 extra_javascript:
   - scripts/simulador.js
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
