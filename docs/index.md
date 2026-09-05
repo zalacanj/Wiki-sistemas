@@ -1,13 +1,18 @@
 # 🖥️ SO Explorer
 
 <div class="hero-so">
+    <h2>Explora, comprende y experimenta con los Sistemas Operativos</h2>
 
-## Explora, comprende y experimenta con los Sistemas Operativos
+    <p>
+        <strong>SO Explorer</strong> es una Wiki interactiva creada para facilitar
+        el aprendizaje de los conceptos fundamentales de
+        <strong>Sistemas Operativos 1</strong> mediante explicaciones claras,
+        ejemplos prácticos, diagramas, código y simulaciones.
+    </p>
 
-**SO Explorer** es una Wiki interactiva creada para facilitar el aprendizaje de los conceptos fundamentales de **Sistemas Operativos 1** mediante explicaciones claras, ejemplos prácticos, diagramas, código y simulaciones.
-
-<a href="unidad1/introduccion/" class="boton-so">Comenzar a explorar</a>
-
+    <a href="unidad1/introduccion/" class="boton-so">
+        Comenzar a explorar
+    </a>
 </div>
 
 ---

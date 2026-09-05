@@ -4,11 +4,12 @@ Cuando ejecutamos un programa, el proceso que se crea **no utiliza la CPU todo e
 
 Para que el sistema operativo pueda saber qué está ocurriendo con cada proceso, utiliza diferentes **estados**.
 
-> 💡 Podemos pensar en los estados como las diferentes etapas por las que pasa un proceso desde que nace hasta que termina.
+!!! Nota
+     Podemos pensar en los estados como las diferentes etapas por las que pasa un proceso desde que nace hasta que termina.
 
 ---
 
-## 🆕 Estado Nuevo
+##  Estado Nuevo
 
 Un proceso se encuentra en estado **Nuevo** cuando acaba de ser creado y el sistema operativo está preparando la información y los recursos necesarios para administrarlo.
 
@@ -19,7 +20,7 @@ En esta etapa, el proceso todavía no está utilizando la CPU.
 
 ---
 
-## ⏳ Estado Listo
+##  Estado Listo
 
 Un proceso pasa al estado **Listo** cuando ya está preparado para ejecutarse, pero todavía está esperando que la CPU esté disponible.
 
@@ -30,7 +31,7 @@ Esto no significa que exista algún problema con el proceso. Simplemente hay otr
 
 ---
 
-## ⚙️ Estado de Ejecución
+##  Estado de Ejecución
 
 Cuando el sistema operativo selecciona uno de los procesos que estaban listos y le asigna la CPU, este pasa al estado **Ejecución**.
 
@@ -42,7 +43,7 @@ Por ejemplo, mientras utilizamos una aplicación, algunos de sus procesos pueden
 
 ---
 
-## ⏸️ Estado Bloqueado o en Espera
+## Estado Bloqueado o en Espera
 
 Un proceso entra en estado **Bloqueado/Espera** cuando no puede continuar hasta que ocurra algún evento o se encuentre disponible algún recurso que necesita.
 
@@ -60,7 +61,7 @@ Mientras está bloqueado, no tendría sentido darle tiempo de CPU porque todaví
 
 ---
 
-## 🏁 Estado Terminado
+##  Estado Terminado
 
 Finalmente tenemos el estado **Terminado**.
 
@@ -72,7 +73,7 @@ Esto es parecido a lo que ocurre en nuestro simulador: cuando el contador de un 
 
 ---
 
-## 🗺️ Diagrama de transición de estados
+##  Diagrama de transición de estados
 
 Los estados no funcionan de manera aislada. Durante su ciclo de vida, un proceso puede pasar de un estado a otro dependiendo de lo que esté ocurriendo dentro del sistema.
 
@@ -93,7 +94,7 @@ stateDiagram-v2
 
 ---
 
-## 🔁 ¿Por qué ocurren estas transiciones?
+##  ¿Por qué ocurren estas transiciones?
 
 Podemos entender las principales transiciones de esta manera:
 
@@ -108,7 +109,7 @@ Podemos entender las principales transiciones de esta manera:
 
 ---
 
-## 💡 Un ejemplo completo
+##  Un ejemplo completo
 
 Imaginemos que abrimos un editor de texto:
 
@@ -135,7 +136,7 @@ Cerramos la aplicación o el proceso termina su trabajo.
 
 ---
 
-## 🧪 Relación con SO Explorer
+##  Relación con SO Explorer
 
 Nuestro simulador también permite observar algunos de estos conceptos.
 
@@ -152,7 +153,7 @@ Cuando un proceso termina, libera la memoria que estaba utilizando y el simulado
 !!! warning "Importante sobre el simulador"
     Nuestro simulador utiliza una versión simplificada de estos conceptos. La **cola de espera por falta de memoria** que mostramos no representa exactamente todos los motivos por los que un proceso real entra al estado Bloqueado. Su objetivo es ayudarnos a visualizar la administración de procesos y recursos de una manera sencilla.
 
-[⚙️ Probar el simulador →](../simulador/index.md)
+[ Probar el simulador →](../simulador/index.md)
 
 ---
 

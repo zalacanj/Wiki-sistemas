@@ -4,11 +4,12 @@ Para poder administrar varios procesos al mismo tiempo, el sistema operativo nec
 
 Toda esta información se almacena en una estructura conocida como **PCB (Process Control Block)** o **Bloque de Control de Proceso**.
 
-> 💡 Podemos imaginar el PCB como la **ficha de identificación de un proceso**. Cada proceso tiene la suya y el sistema operativo la utiliza para saber cómo administrarlo.
+!!! note
+     Podemos imaginar el PCB como la **ficha de identificación de un proceso**. Cada proceso tiene la suya y el sistema operativo la utiliza para saber cómo administrarlo.
 
 ---
 
-## 🔎 ¿Para qué sirve el PCB?
+##  ¿Para qué sirve el PCB?
 
 El PCB permite que el sistema operativo mantenga organizada toda la información necesaria para controlar un proceso durante su ciclo de vida.
 
@@ -26,11 +27,11 @@ Gracias a esta estructura, el sistema puede realizar tareas como:
 
 ---
 
-## 🗂️ ¿Qué información guarda un PCB?
+##  ¿Qué información guarda un PCB?
 
 Aunque su estructura puede variar dependiendo del sistema operativo, existen varios datos que normalmente forman parte del PCB.
 
-### 🆔 PID — Identificador del proceso
+###  PID — Identificador del proceso
 
 El **PID (Process ID)** es un número que permite identificar de manera única a un proceso.
 
@@ -51,7 +52,7 @@ Aunque dos procesos pertenezcan al mismo programa, pueden tener **PID diferentes
 
 ---
 
-### ⚙️ Registros del procesador
+###  Registros del procesador
 
 Los **registros de la CPU** almacenan temporalmente información que el procesador está utilizando mientras ejecuta instrucciones.
 
@@ -61,7 +62,7 @@ En otras palabras, permiten conservar parte del **contexto de ejecución** del p
 
 ---
 
-### 📍 Contador de programa
+###  Contador de programa
 
 El **contador de programa**, también conocido como **Program Counter (PC)**, indica la ubicación de la próxima instrucción que debe ejecutar el procesador para ese proceso.
 
@@ -73,7 +74,7 @@ Cuando el proceso vuelve a obtener la CPU, esta información ayuda a continuar s
 
 ---
 
-### 🧠 Información y punteros de memoria
+###  Información y punteros de memoria
 
 Un proceso necesita memoria para almacenar sus instrucciones y datos mientras se encuentra en ejecución.
 
@@ -83,7 +84,7 @@ Esta información ayuda al sistema a saber **qué partes de la memoria correspon
 
 ---
 
-### 📂 Archivos abiertos
+###  Archivos abiertos
 
 Durante su ejecución, un proceso puede utilizar archivos.
 
@@ -93,7 +94,7 @@ El PCB puede contener referencias a los **archivos abiertos y otros recursos aso
 
 ---
 
-## 🧱 Podemos visualizar un PCB así
+##  Podemos visualizar un PCB así
 
 ```text
 ┌─────────────────────────────────┐
@@ -113,7 +114,7 @@ Cada vez que el sistema operativo necesita consultar o actualizar información d
 
 ---
 
-## 💡 Ejemplo sencillo
+##  Ejemplo sencillo
 
 Supongamos que tenemos un proceso correspondiente a un navegador.
 
@@ -134,7 +135,7 @@ Su información podría representarse de manera simplificada así:
 
 ---
 
-## 🔄 ¿Qué tiene que ver el PCB con el cambio de contexto?
+## ¿Qué tiene que ver el PCB con el cambio de contexto?
 
 Aquí es donde el PCB se vuelve especialmente importante.
 
@@ -165,7 +166,7 @@ En el siguiente tema veremos este procedimiento con más detalle mediante el **C
 
 ---
 
-## 🧪 PCB y nuestro simulador
+##  PCB y nuestro simulador
 
 Nuestro simulador no implementa un PCB completo como el de un sistema operativo real, pero cada proceso que creamos sí posee varios datos que nos ayudan a representar parte del concepto:
 
@@ -195,7 +196,7 @@ Podemos considerar estos datos como una **representación simplificada de la inf
 
 ---
 
-## 🧠 En resumen
+##  En resumen
 
 El **PCB** es una estructura que utiliza el sistema operativo para mantener la información necesaria para administrar cada proceso.
 
